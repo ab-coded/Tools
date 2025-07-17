@@ -1,0 +1,45 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Onload Stats Dashboard",
+    "panels": [],
+    "templating": {
+      "list": [
+        {
+          "name": "stack_id",
+          "type": "query",
+          "datasource": "Prometheus",
+          "query": "label_values(onload_ci_netif_stats_k_polls_total, stack_id)",
+          "refresh": 1,
+          "includeAll": true,
+          "multi": true
+        },
+        {
+          "name": "stack_name",
+          "type": "query",
+          "datasource": "Prometheus",
+          "query": "label_values(onload_ci_netif_stats_k_polls_total, stack_name)",
+          "refresh": 1,
+          "includeAll": true,
+          "multi": true
+        },
+        {
+          "name": "pid",
+          "type": "query",
+          "datasource": "Prometheus",
+          "query": "label_values(onload_ci_netif_stats_k_polls_total, pid)",
+          "refresh": 1,
+          "includeAll": true,
+          "multi": true
+        }
+      ]
+    },
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "schemaVersion": 36,
+    "version": 1,
+    "refresh": "10s"
+  }
+}
