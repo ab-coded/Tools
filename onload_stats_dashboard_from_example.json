@@ -1,0 +1,2636 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Onload Stats Dashboard (Styled Panels)",
+    "panels": [
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_active_opens_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+        "id": 0,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_active_opens_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_deferred_polls_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 0
+        },
+        "id": 1,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_deferred_polls_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_deferred_work_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 8
+        },
+        "id": 2,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_deferred_work_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_getsockopt_ni_lock_contends_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 8
+        },
+        "id": 3,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_getsockopt_ni_lock_contends_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_interrupt_budget_limited_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 16
+        },
+        "id": 4,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_interrupt_budget_limited_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_interrupt_evs_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 16
+        },
+        "id": 5,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_interrupt_evs_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_interrupt_lock_contends_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 24
+        },
+        "id": 6,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_interrupt_lock_contends_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_interrupt_no_events_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 24
+        },
+        "id": 7,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_interrupt_no_events_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_interrupt_polls_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 32
+        },
+        "id": 8,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_interrupt_polls_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_interrupt_primes_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 32
+        },
+        "id": 9,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_interrupt_primes_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_interrupt_wakes_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 40
+        },
+        "id": 10,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_interrupt_wakes_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_interrupts_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 40
+        },
+        "id": 11,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_interrupts_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_ioctl_evq_polls_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 48
+        },
+        "id": 12,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_ioctl_evq_polls_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_k_polls_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 48
+        },
+        "id": 13,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_k_polls_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_lock_wakes_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 56
+        },
+        "id": 14,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_lock_wakes_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_muxer_primes_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 56
+        },
+        "id": 15,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_muxer_primes_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_periodic_evs_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 64
+        },
+        "id": 16,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_periodic_evs_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_periodic_lock_contends_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 64
+        },
+        "id": 17,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_periodic_lock_contends_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_periodic_polls_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 72
+        },
+        "id": 18,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_periodic_polls_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_huge_pages_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 72
+        },
+        "id": 19,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_huge_pages_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_nonb_steal_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 80
+        },
+        "id": 20,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_nonb_steal_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_nonb_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 80
+        },
+        "id": 21,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_nonb_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_scramble0_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 88
+        },
+        "id": 22,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_scramble0_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_scramble1_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 88
+        },
+        "id": 23,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_scramble1_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_scramble2_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 96
+        },
+        "id": 24,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_scramble2_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_wait_primes_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 96
+        },
+        "id": 25,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_wait_primes_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_wait_spin_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 104
+        },
+        "id": 26,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_wait_spin_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_pkt_wakes_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 104
+        },
+        "id": 27,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_pkt_wakes_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_rx_evs_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 112
+        },
+        "id": 28,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_rx_evs_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_setsockopt_ni_lock_contends_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 112
+        },
+        "id": 29,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_setsockopt_ni_lock_contends_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_lock_buzz_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 120
+        },
+        "id": 30,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_lock_buzz_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_lock_sleeps_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 120
+        },
+        "id": 31,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_lock_sleeps_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_sleep_primes_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 128
+        },
+        "id": 32,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_sleep_primes_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_sleeps_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 128
+        },
+        "id": 33,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_sleeps_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_wakes_rx_os_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 136
+        },
+        "id": 34,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_wakes_rx_os_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_wakes_rx_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 136
+        },
+        "id": 35,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_wakes_rx_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_wakes_signal_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 144
+        },
+        "id": 36,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_wakes_signal_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_wakes_tx_os_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 144
+        },
+        "id": 37,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_wakes_tx_os_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_sock_wakes_tx_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 152
+        },
+        "id": 38,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_sock_wakes_tx_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_stack_lock_buzz_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 152
+        },
+        "id": 39,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_stack_lock_buzz_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_accept_os_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 160
+        },
+        "id": 40,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_accept_os_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_handover_bind_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 160
+        },
+        "id": 41,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_handover_bind_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_handover_connect_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 168
+        },
+        "id": 42,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_handover_connect_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_handover_listen_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 168
+        },
+        "id": 43,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_handover_listen_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_handover_setsockopt_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 176
+        },
+        "id": 44,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_handover_setsockopt_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_handover_socket_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 176
+        },
+        "id": 45,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_handover_socket_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_send_fail_noroute_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 184
+        },
+        "id": 46,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_send_fail_noroute_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_send_ni_lock_contends_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 184
+        },
+        "id": 47,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_send_ni_lock_contends_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tcp_send_nonb_pool_empty_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 192
+        },
+        "id": 48,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tcp_send_nonb_pool_empty_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_timeout_interrupt_evs_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 192
+        },
+        "id": 49,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_timeout_interrupt_evs_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_timeout_interrupt_lock_contends_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 200
+        },
+        "id": 50,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_timeout_interrupt_lock_contends_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_timeout_interrupt_no_events_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 200
+        },
+        "id": 51,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_timeout_interrupt_no_events_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_timeout_interrupt_polls_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 208
+        },
+        "id": 52,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_timeout_interrupt_polls_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_timeout_interrupt_wakes_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 208
+        },
+        "id": 53,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_timeout_interrupt_wakes_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_timeout_interrupt_when_primed_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 216
+        },
+        "id": 54,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_timeout_interrupt_when_primed_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_timeout_interrupts_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 216
+        },
+        "id": 55,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_timeout_interrupts_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_tx_evs_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 224
+        },
+        "id": 56,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_tx_evs_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_u_polls_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 224
+        },
+        "id": 57,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_u_polls_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_udp_handover_bind_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 232
+        },
+        "id": 58,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_udp_handover_bind_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_udp_handover_connect_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 232
+        },
+        "id": 59,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_udp_handover_connect_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_udp_handover_socket_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 240
+        },
+        "id": 60,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_udp_handover_socket_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_udp_send_mcast_loop_drop_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 240
+        },
+        "id": 61,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_udp_send_mcast_loop_drop_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_udp_send_mcast_loop_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 248
+        },
+        "id": 62,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_udp_send_mcast_loop_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_udp_send_ni_lock_contends_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 248
+        },
+        "id": 63,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_udp_send_ni_lock_contends_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_close_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 256
+        },
+        "id": 64,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_close_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_need_prime_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 256
+        },
+        "id": 65,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_need_prime_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_pkt_waiter_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 264
+        },
+        "id": 66,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_pkt_waiter_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_prime_ul_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 264
+        },
+        "id": 67,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_prime_ul_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_socket_list_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 272
+        },
+        "id": 68,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_socket_list_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_swf_update_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 272
+        },
+        "id": 69,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_swf_update_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_syscall_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 280
+        },
+        "id": 70,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_syscall_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 280
+        },
+        "id": 71,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_wake_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 288
+        },
+        "id": 72,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_wake_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      },
+      {
+        "type": "timeseries",
+        "title": "onload_ci_netif_stats_unlock_slow_xdp_change_total",
+        "datasource": {
+          "type": "prometheus",
+          "uid": "Prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 288
+        },
+        "id": 73,
+        "targets": [
+          {
+            "expr": "onload_ci_netif_stats_unlock_slow_xdp_change_total{stack_id=~\"$stack_id\", stack_name=~\"$stack_name\", pid=~\"$pid\"}",
+            "legendFormat": "{{stack_name}} (pid={{pid}})",
+            "refId": "A"
+          }
+        ],
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "single"
+          }
+        }
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "stack_id",
+          "type": "query",
+          "datasource": "Prometheus",
+          "query": "label_values(onload_ci_netif_stats_k_polls_total, stack_id)",
+          "refresh": 1,
+          "includeAll": true,
+          "multi": true
+        },
+        {
+          "name": "stack_name",
+          "type": "query",
+          "datasource": "Prometheus",
+          "query": "label_values(onload_ci_netif_stats_k_polls_total, stack_name)",
+          "refresh": 1,
+          "includeAll": true,
+          "multi": true
+        },
+        {
+          "name": "pid",
+          "type": "query",
+          "datasource": "Prometheus",
+          "query": "label_values(onload_ci_netif_stats_k_polls_total, pid)",
+          "refresh": 1,
+          "includeAll": true,
+          "multi": true
+        }
+      ]
+    },
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "schemaVersion": 36,
+    "version": 1,
+    "refresh": "10s"
+  }
+}
